@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Form from 'react-bootstrap/Form';
 
 const SearchBar = ({items,onItemSelected}) => {
-    const [query,setQuery] = useState("ma")
+    const [query,setQuery] = useState("re")
     const [results,setResults] = useState([])
 
     return(
