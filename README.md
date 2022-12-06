@@ -6,7 +6,7 @@
 
 ## App Preview
  
-<img src="./src/assets/search.png" height="300px">
+<img src="./src/assets/searchAx.png" height="300px">
 
 ## Built with 
 
@@ -14,6 +14,8 @@
 - JavaScript
 - React.JS v18
 - React Bootstrap
+- Axios
+- [Make-up Api](http://makeup-api.herokuapp.com/)
 - Netlify
 
 ## Live Demo
