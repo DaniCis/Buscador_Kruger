@@ -1,11 +1,17 @@
 body{
     height: 100vh;
-    background: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3R8ZW58MHx8MHx8&w=1000&q=80);
+    background: url(https://img.freepik.com/free-vector/vibrant-pink-watercolor-painting-background_53876-58931.jpg?w=2000);
     background-size: cover;
 }
-
+.contenedorBtn{
+    display: flex;
+    justify-content: center;
+}
 .contenedorOption{
-    margin: 10px!important;
+    margin: 5px!important;
+}
+.contenedorOption p{
+    text-align: center;
 }
 .textResults{
     text-align: right;
@@ -17,10 +23,19 @@ span{
 /*Marked item*/
 .contenedorLista{
  margin-top: 20px;
+ overflow-y: auto;
+ max-height: 400px; 
 }
 .list-group-item-action:focus{
     background-color: rgb(213, 213, 213)!important;
 }
 .list-group-item-action:hover{
     background-color: rgb(221, 221, 221)!important;
+}
+.btn-secondary {
+    --bs-btn-bg: #aa1368!important; 
+    --bs-btn-border-color: #a88ea6!important;
+    --bs-btn-hover-bg: #b14d97!important;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-bg: #b14d97!important;
 }
