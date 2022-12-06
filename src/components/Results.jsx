@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import MarkedItem from "./MarkedItem";
+import Col from 'react-bootstrap/Col'
 
 const Results = ({items, onItemSelected, query, onResultsCalculated}) => {
     const [results,setResults] = useState([])
@@ -18,13 +19,15 @@ const Results = ({items, onItemSelected, query, onResultsCalculated}) => {
     }, [onResultsCalculated,results]);
 
     return(
-        <div className="contenedorLista">
-        { query !== "" &&
-            filteredItems.map(item => 
-                <MarkedItem  key={item.id} item={item} onClick={onItemSelected} query={query} />
-            )
-        }
-        </div>
+        <Col xs={{span:10,offset:1}} sm={{span:8,offset:2}} md={{span:6,offset:3}} xl={{span:4,offset:4}}>
+            <div className="contenedorLista">
+            { query !== "" &&
+                filteredItems.map(item => 
+                    <MarkedItem  key={item.id} item={item} onClick={onItemSelected} query={query} />
+                )
+            }
+            </div>
+        </Col>
     )
 }
 export default Results;
