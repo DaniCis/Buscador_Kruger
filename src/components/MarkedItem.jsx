@@ -6,10 +6,10 @@ import Col from 'react-bootstrap/Col'
 const MarkedItem = ({item,query,onClick}) => {
     
     const getPositions = (item,query) =>{
-        const index = item.title.toLowerCase().indexOf(query)
-        const left = item.title.slice(0, index)
-        const center = item.title.slice(index, index + query.length)
-        const right = item.title.slice(index + query.length)
+        const index = item.name.toLowerCase().indexOf(query)
+        const left = item.name.slice(0, index)
+        const center = item.name.slice(index, index + query.length)
+        const right = item.name.slice(index + query.length)
         return {left,center,right}
     }
     const { left, center, right } = useMemo(

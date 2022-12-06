@@ -6,7 +6,7 @@ const Results = ({items, onItemSelected, query, onResultsCalculated}) => {
 
     const findMatch = (items,query) =>{
         const res = items.filter((item) => {
-            return (item.title.toLowerCase().indexOf(query) >= 0 && query.length > 0 && query !== "" )
+            return (item.name.toLowerCase().indexOf(query) >= 0 && query.length > 0 && query !== "" )
         })
         setResults(res)
         return res
